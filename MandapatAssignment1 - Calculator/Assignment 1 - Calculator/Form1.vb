@@ -8,7 +8,11 @@
     End Sub
 
     Private Sub Button34_Click(sender As Object, e As EventArgs) Handles Button34.Click
+        If TextBoxDisplay.Text = "0" Then
+            TextBoxDisplay.Text = "4"
 
+        Else TextBoxDisplay.Text = TextBoxDisplay.Text & "4"
+        End If
     End Sub
 
     Private Sub LinkLabel8_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel8.LinkClicked
