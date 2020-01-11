@@ -72,7 +72,7 @@ Partial Class Calculator
         Me.LinkLabel8 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel9 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel10 = New System.Windows.Forms.LinkLabel()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBoxDisplay = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -590,15 +590,17 @@ Partial Class Calculator
         Me.LinkLabel10.TabStop = True
         Me.LinkLabel10.Text = "F-E"
         '
-        'Label3
+        'TextBoxDisplay
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 40.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(413, 59)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(58, 63)
-        Me.Label3.TabIndex = 46
-        Me.Label3.Text = "0"
+        Me.TextBoxDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBoxDisplay.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxDisplay.Location = New System.Drawing.Point(301, 81)
+        Me.TextBoxDisplay.Multiline = True
+        Me.TextBoxDisplay.Name = "TextBoxDisplay"
+        Me.TextBoxDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.TextBoxDisplay.Size = New System.Drawing.Size(175, 41)
+        Me.TextBoxDisplay.TabIndex = 46
+        Me.TextBoxDisplay.Text = "0"
         '
         'Calculator
         '
@@ -606,7 +608,7 @@ Partial Class Calculator
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(752, 524)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.TextBoxDisplay)
         Me.Controls.Add(Me.LinkLabel10)
         Me.Controls.Add(Me.LinkLabel9)
         Me.Controls.Add(Me.LinkLabel7)
@@ -712,5 +714,5 @@ Partial Class Calculator
     Friend WithEvents LinkLabel8 As LinkLabel
     Friend WithEvents LinkLabel9 As LinkLabel
     Friend WithEvents LinkLabel10 As LinkLabel
-    Friend WithEvents Label3 As Label
+    Friend WithEvents TextBoxDisplay As TextBox
 End Class
