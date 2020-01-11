@@ -75,4 +75,12 @@
         Else TextBoxDisplay.Text = TextBoxDisplay.Text & "6"
         End If
     End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+        If TextBoxDisplay.Text = "0" Then
+            TextBoxDisplay.Text = "7"
+
+        Else TextBoxDisplay.Text = TextBoxDisplay.Text & "7"
+        End If
+    End Sub
 End Class
