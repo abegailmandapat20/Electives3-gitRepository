@@ -91,4 +91,12 @@
         Else TextBoxDisplay.Text = TextBoxDisplay.Text & "8"
         End If
     End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        If TextBoxDisplay.Text = "0" Then
+            TextBoxDisplay.Text = "9"
+
+        Else TextBoxDisplay.Text = TextBoxDisplay.Text & "9"
+        End If
+    End Sub
 End Class
