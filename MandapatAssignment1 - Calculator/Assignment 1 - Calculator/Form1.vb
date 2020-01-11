@@ -47,4 +47,12 @@
         Else TextBoxDisplay.Text = TextBoxDisplay.Text & "2"
         End If
     End Sub
+
+    Private Sub Button27_Click(sender As Object, e As EventArgs) Handles Button27.Click
+        If TextBoxDisplay.Text = "0" Then
+            TextBoxDisplay.Text = "3"
+
+        Else TextBoxDisplay.Text = TextBoxDisplay.Text & "3"
+        End If
+    End Sub
 End Class
